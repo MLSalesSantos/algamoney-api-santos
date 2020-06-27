@@ -1,0 +1,43 @@
+
+SPRING DATA JPA
+Hibernate
+
+---
+
+Criar Projeto 
+Conectar ao MySQL
+ - Criar Tabela
+ 
+Fazer o GET
+
+PACOTE Model
+  - CLASSE Categoria
+    - Mapear as colunas da tabela
+    - Gerar os Gets and Seters
+    - gerar o hashCode()
+      - Generate hashCode() and equals() - atalho GHAE --> SÓ O CODIGO
+    - Adicionar o Hibernate Validate
+      - @NotNull - validation no nome
+     
+PACOTE Repository
+   - INTERFACE CategoriaRepository
+     - EXTEND JPARepository
+       - < Categoria, Long >  Onde Categoria é a classe é o Long se refere ao Código do ID da classe
+   
+PACOTE Resource  ( Controller)
+ - CLASSE CategoriaResource
+   - GET    -> Criar uma metodo com uma lista de categoria - Listar Todos  
+   - POST   -> Criar um metodo para CRIAR uma CATEGOTIA no banco de dados 
+   - GET ID -> Criar um metodo para listar pelo ID
+ 
+ PACOTE ExceptionHandler ( TRATANENTO DE ESCESSOES )
+ 
+- Classe AlgamoneyExceptionHandleR
+  - extendes ResponseEntityExceptionHandler
+ 
+ 
+ 
+ 
+ 
+ 
+ 
